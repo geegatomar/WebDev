@@ -1,0 +1,51 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.semanticHighlighting.enabled": true,
+    "window.zoomLevel": 0,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+    "python.pythonPath": "C:\\Users\\343GuiltySpark\\anaconda3\\python.exe",
+    "prettier.arrowParens": "avoid",
+    "prettier.disableLanguages": [
+        "Java"
+    ],
+    "python.languageServer": "Pylance",
+    "workbench.colorTheme": "Community Material Theme Ocean",
+    "eslint.format.enable": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "razor": "html",
+        "plaintext": "jade",
+        "django-html": "html"
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "files.associations": {
+        "*html": "html",
+        "*njk": "html"
+    },
+    "editor.fontSize": 17,
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "html.format.indentInnerHtml": true,
+    "settingsSync.ignoredExtensions": [
+    
+    ],
+    "css.enabledLanguages": [
+    
+        "html"
+    ]
+}
