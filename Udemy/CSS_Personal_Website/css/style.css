@@ -1,5 +1,31 @@
 /********************************* TAG elements *******************************/
 
 body{
-    background-color: aqua;
+    background-color: #dbf6e9;
+    text-align: center;
+    margin-top: 40px;
+    
 }
+
+div{
+    clear: both;
+    background-color: #caf7f4;
+}
+
+h1{
+    width: 20%;
+    margin: 10px auto 0 auto;
+}
+
+/********************************* CLASS elements *******************************/
+
+.bottom-cloud{
+    position: absolute;
+}
+
+.top-cloud{
+    position: relative;
+    left: 200px;
+}
+
+
