@@ -1,37 +1,31 @@
-<!DOCTYPE html>
+<%- include("header") -%>
 
-<html>
+  <div class="box" id="heading">
+    <h1> <%= listTitle %> </h1>
+  </div>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Day of the Week</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+  <div class="box">
+    <!-- <% for (let i=0; i<newListItems.length; i++) { %>
+      <div class="item">
+        <input type="checkbox">
+        <p><%=  newListItems[i]  %></p>
+      </div>
+      <% } %> -->
 
-    <body>
-        <div class="box" id="heading">
-            <h1><%= kindOfDay %></h1>
+    <%  newListItems.forEach(function(eachItem){ %>
+      <form action="/delete" method="post">
+        <div class="item">
+        <input type="checkbox" name="checkbox" value="<%= eachItem._id %>" onChange="this.form.submit()">
+          <p> <%= eachItem.name %> </p>
         </div>
+        <input type="hidden" name="listName" value="<%= listTitle %>"> 
+      </form>
+    <%  }); %>
 
-        <div class="box">
-            <% for(var i = 0; i < itemList.length; i++){ %>
-            <div class="item">
-                <input type="checkbox">
-                <p> <%= itemList[i] %> </p>
-            </div>
-            <% } %>
+      <form class="item" action="/" method="post">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <button type="submit" name="list" value="<%= listTitle %>">+</button>
+      </form>
+  </div>
 
-            <form class="item" action="/" method="POST">
-                <input type="text" name="nextItem" placeholder="New Item">
-                <button type="submit" name="button">+</button>
-            </form>
-
-        </div>
-
-        
-    </body>
-
-</html>
+<%- include("footer") -%>
